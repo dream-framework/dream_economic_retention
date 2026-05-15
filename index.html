@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="S2 Global Economic Retention Atlas - live-feed research PoC" />
+    <title>S2 Global Economic Retention Atlas</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <section>
+          <div class="eyebrow">DREAM / S2 research PoC</div>
+          <h1>S2 Global Economic Retention Atlas</h1>
+        </section>
+        <section class="status-card" aria-live="polite">
+          <div id="feedStatus" class="feed-status">
+            <span class="tiny-spinner" aria-hidden="true"></span>
+            <span>loading live feed</span>
+          </div>
+          <div id="feedMeta" class="feed-meta">No cached data loaded yet.</div>
+        </section>
+      </header>
+
+      <section class="toolbar" aria-label="Layer controls">
+        <div id="layerTabs" class="layer-tabs"></div>
+        <div class="filters">
+          <label class="signal-control">
+            Signal
+            <select id="dataModeToggle" aria-label="Official or cleaned data mode">
+              <option value="official">Official</option>
+              <option value="cleaned">Cleaned</option>
+            </select>
+          </label>
+          <label>
+            Region
+            <select id="regionFilter">
+              <option value="all">All regions</option>
+            </select>
+          </label>
+          <label>
+            Search
+            <input id="countrySearch" type="search" placeholder="country name or ISO3" autocomplete="off" />
+          </label>
+          <button id="downloadData" class="download-button" type="button" disabled title="Download the loaded live-feed JSON analysis bundle">
+            Download JSON
+          </button>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <section class="map-card">
+          <div id="map" role="application" aria-label="World map"></div>
+          <div class="legend-card">
+            <div id="legendTitle" class="legend-title">Legend</div>
+            <div id="legendRamp" class="legend-ramp"></div>
+            <div id="legendTicks" class="legend-ticks"></div>
+          </div>
+          <div id="mapMessage" class="map-message hidden"></div>
+          <div id="dynamicsPanel" class="dynamics-panel hidden" aria-label="Dynamics timeline controls">
+            <button id="playDynamics" class="play-button" type="button" aria-label="Play or pause timeline">▶</button>
+            <label class="year-control">
+              <span id="yearLabel">--</span>
+              <input id="yearSlider" type="range" min="1980" max="2025" step="1" value="2025" />
+            </label>
+            <label class="speed-control">
+              <span>speed</span>
+              <select id="speedSelect" aria-label="Dynamics playback speed">
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="2">2x</option>
+                <option value="4">4x</option>
+              </select>
+            </label>
+            <label class="flow-control">
+              <input id="flowToggle" type="checkbox" />
+              show inferred flows
+            </label>
+            <div id="narrationText" class="narration-text">Movie notes will summarize the selected year after live data loads.</div>
+            <div id="dynamicsNote" class="dynamics-note">Inferred pressure-gradient arcs from historical live-source indicators.</div>
+          </div>
+        </section>
+
+        <aside class="inspector" aria-label="Country details">
+          <section class="panel selected-country">
+            <div class="panel-kicker">Hover / click country</div>
+            <h2 id="countryTitle">No country selected</h2>
+            <div id="countrySubtitle" class="muted">Move over the map after the live feed loads.</div>
+            <div id="countryMetrics" class="metric-grid compact"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-kicker">Current layer</div>
+            <h3 id="layerTitle">Observed CPI inflation</h3>
+            <p id="layerDescription" class="muted"></p>
+            <div id="layerValue" class="hero-number">--</div>
+          </section>
+
+          <section class="panel chart-panel">
+            <div class="panel-kicker">Recent live-source history</div>
+            <div id="sparkline" class="sparkline-empty">No country selected.</div>
+          </section>
+
+          <section class="panel audit-panel">
+            <div class="panel-kicker">Audit trail</div>
+            <div id="auditTrail" class="audit-lines">Waiting for live feed.</div>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
