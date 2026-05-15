@@ -1,0 +1,218 @@
+{
+  "generated_at_utc": "2026-05-15T05:01:04+00:00",
+  "formula_version": "s2-econ-retention-poc-v0.5-official-cleaned-toggle-live-only",
+  "live_only": true,
+  "country_count": 213,
+  "date_window": {
+    "start_year": 1986,
+    "end_year": 2026,
+    "history_years_requested": 40
+  },
+  "source_metadata": {
+    "inflation": {
+      "code": "FP.CPI.TOTL.ZG",
+      "label": "Inflation, consumer prices (annual %)",
+      "unit": "%",
+      "role": "observed_price_pressure",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "cpi_index": {
+      "code": "FP.CPI.TOTL",
+      "label": "Consumer price index",
+      "unit": "index",
+      "role": "observed_price_level",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "gdp_deflator_inflation": {
+      "code": "NY.GDP.DEFL.KD.ZG",
+      "label": "Inflation, GDP deflator (annual %)",
+      "unit": "%",
+      "role": "economy_wide_price_pressure_crosscheck",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.DEFL.KD.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "gdp_growth": {
+      "code": "NY.GDP.MKTP.KD.ZG",
+      "label": "GDP growth (annual %)",
+      "unit": "%",
+      "role": "real_output_growth",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "gdp_pc_growth": {
+      "code": "NY.GDP.PCAP.KD.ZG",
+      "label": "GDP per capita growth (annual %)",
+      "unit": "%",
+      "role": "productive_growth_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.KD.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "broad_money_gdp": {
+      "code": "FM.LBL.BMNY.GD.ZS",
+      "label": "Broad money (% of GDP)",
+      "unit": "% of GDP",
+      "role": "financialization_depth_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.GD.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "broad_money_growth": {
+      "code": "FM.LBL.BMNY.ZG",
+      "label": "Broad money growth (annual %)",
+      "unit": "%",
+      "role": "monetary_expansion_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "domestic_credit_private_gdp": {
+      "code": "FS.AST.PRVT.GD.ZS",
+      "label": "Domestic credit to private sector (% of GDP)",
+      "unit": "% of GDP",
+      "role": "financialization_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FS.AST.PRVT.GD.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "debt_service_exports": {
+      "code": "DT.TDS.DECT.EX.ZS",
+      "label": "Total debt service (% of exports)",
+      "unit": "% of exports",
+      "role": "debt_pressure_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/DT.TDS.DECT.EX.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "gov_expense_gdp": {
+      "code": "GC.XPN.TOTL.GD.ZS",
+      "label": "Expense (% of GDP)",
+      "unit": "% of GDP",
+      "role": "overhead_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.XPN.TOTL.GD.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "unemployment": {
+      "code": "SL.UEM.TOTL.ZS",
+      "label": "Unemployment, total (% of labor force)",
+      "unit": "%",
+      "role": "labor_slack_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "labor_force_participation": {
+      "code": "SL.TLF.CACT.ZS",
+      "label": "Labor force participation rate, total (% ages 15+)",
+      "unit": "%",
+      "role": "hidden_labor_slack_crosscheck",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.TLF.CACT.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "employment_to_population": {
+      "code": "SL.EMP.TOTL.SP.ZS",
+      "label": "Employment to population ratio, 15+, total (%)",
+      "unit": "%",
+      "role": "hidden_labor_slack_crosscheck",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.EMP.TOTL.SP.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "trade_gdp": {
+      "code": "NE.TRD.GNFS.ZS",
+      "label": "Trade (% of GDP)",
+      "unit": "% of GDP",
+      "role": "openness_context",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NE.TRD.GNFS.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    }
+  },
+  "cluster_labels": {
+    "productive_coherence": "Productive coherence",
+    "symbolic_finance": "Symbolic finance",
+    "retention_drag": "Retention drag",
+    "inflation_shock": "Inflation shock",
+    "dust_overhead": "Dust / overhead",
+    "transition": "Transition / mixed",
+    "low_signal": "Low signal"
+  },
+  "dynamics": {
+    "available_years": [
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "flow_interpretation": "Inferred retention-pressure gradient arcs, not observed bilateral financial/trade flows."
+  },
+  "model_notes": {
+    "no_demo_data": "No synthetic country records or demo values are written. Derived layers use only present live-source inputs and emit null when needed inputs are absent.",
+    "productive_inflation": "max(CPI inflation,0) multiplied by present positive growth scores from GDP growth and GDP-per-capita growth.",
+    "retention_drag": "Residual positive inflation after productive component, weighted by present debt-service, government-expense, and negative-growth pressure scores.",
+    "symbolic_inflation": "Residual positive inflation weighted by smooth broad-money/GDP and private-credit/GDP financialization scores. The old hard-clipped finance score is retained as legacy_financialization_score for audit only.",
+    "measurement_robust_s2_score": "Measurement-robust S2 stress score from CPI/GDP-deflator cross-check, broad-money growth, hidden labor slack, debt/overhead, weak growth, and smoothed finance depth. This does not truly reverse hedonics or national methodology; it reduces dependence on any single official series.",
+    "official_cleaned_toggle": "The app exposes a global Official/Cleaned toggle. Official mode uses direct World Bank series. Cleaned mode uses the measurement-adjusted proxy input set for all layers, including dynamics and flows.",
+    "measurement_divergence_score": "CPI-vs-GDP-deflator divergence plus labor slack cross-checks from participation/employment signals.",
+    "dust_index": "0-100 maintenance/overhead proxy from present debt, finance, government expense, unemployment, and negative-growth pressures.",
+    "coherence_score": "100 minus present pressure scores from inflation deviation, debt, finance, labor slack, and negative growth. Higher is more coherent.",
+    "dynamics_layer": "Yearly cluster states and inferred regional pressure-gradient arcs from historical live-source indicators. Arcs are not measured trade/capital flows; they are visual hypotheses from retention-pressure gradients."
+  }
+}
