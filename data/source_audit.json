@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-30T12:23:27+00:00",
+  "generated_at_utc": "2026-07-02T12:22:29+00:00",
   "formula_version": "s2-econ-retention-poc-v0.5-official-cleaned-toggle-live-only",
   "live_only": true,
   "country_count": 213,
@@ -15,9 +15,9 @@
       "unit": "%",
       "role": "observed_price_pressure",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "cpi_index": {
       "code": "FP.CPI.TOTL",
@@ -25,9 +25,9 @@
       "unit": "index",
       "role": "observed_price_level",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "gdp_deflator_inflation": {
       "code": "NY.GDP.DEFL.KD.ZG",
@@ -35,9 +35,9 @@
       "unit": "%",
       "role": "economy_wide_price_pressure_crosscheck",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.DEFL.KD.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "gdp_growth": {
       "code": "NY.GDP.MKTP.KD.ZG",
@@ -45,9 +45,9 @@
       "unit": "%",
       "role": "real_output_growth",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "gdp_pc_growth": {
       "code": "NY.GDP.PCAP.KD.ZG",
@@ -55,9 +55,9 @@
       "unit": "%",
       "role": "productive_growth_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.KD.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "broad_money_gdp": {
       "code": "FM.LBL.BMNY.GD.ZS",
@@ -65,9 +65,9 @@
       "unit": "% of GDP",
       "role": "financialization_depth_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.GD.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "broad_money_growth": {
       "code": "FM.LBL.BMNY.ZG",
@@ -75,9 +75,9 @@
       "unit": "%",
       "role": "monetary_expansion_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "domestic_credit_private_gdp": {
       "code": "FS.AST.PRVT.GD.ZS",
@@ -85,9 +85,9 @@
       "unit": "% of GDP",
       "role": "financialization_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FS.AST.PRVT.GD.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "debt_service_exports": {
       "code": "DT.TDS.DECT.EX.ZS",
@@ -95,9 +95,9 @@
       "unit": "% of exports",
       "role": "debt_pressure_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/DT.TDS.DECT.EX.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "gov_expense_gdp": {
       "code": "GC.XPN.TOTL.GD.ZS",
@@ -105,9 +105,9 @@
       "unit": "% of GDP",
       "role": "overhead_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.XPN.TOTL.GD.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "unemployment": {
       "code": "SL.UEM.TOTL.ZS",
@@ -115,9 +115,9 @@
       "unit": "%",
       "role": "labor_slack_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "labor_force_participation": {
       "code": "SL.TLF.CACT.ZS",
@@ -125,9 +125,9 @@
       "unit": "%",
       "role": "hidden_labor_slack_crosscheck",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.TLF.CACT.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "employment_to_population": {
       "code": "SL.EMP.TOTL.SP.ZS",
@@ -135,9 +135,9 @@
       "unit": "%",
       "role": "hidden_labor_slack_crosscheck",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.EMP.TOTL.SP.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     },
     "trade_gdp": {
       "code": "NE.TRD.GNFS.ZS",
@@ -145,9 +145,9 @@
       "unit": "% of GDP",
       "role": "openness_context",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NE.TRD.GNFS.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-04-08",
+      "lastupdated": "2026-07-01",
       "sourceid": "2",
-      "rows": 10640
+      "rows": 10600
     }
   },
   "cluster_labels": {
@@ -199,7 +199,8 @@
       2021,
       2022,
       2023,
-      2024
+      2024,
+      2025
     ],
     "flow_interpretation": "Inferred retention-pressure gradient arcs, not observed bilateral financial/trade flows."
   },
